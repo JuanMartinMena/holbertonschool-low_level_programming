@@ -9,15 +9,12 @@ int main(void)
 
 	for (inicio = 'a'; inicio <= 'z'; inicio++)
 {
-	if (inicio == 'e' || inicio == 'q')
-{
-	inicio++;
-}
-	else
+	if (inicio != 'e' && inicio != 'q')
 {
 		putchar(inicio);
 }
 }
 		putchar('\n');
+
 	return (0);
 }
