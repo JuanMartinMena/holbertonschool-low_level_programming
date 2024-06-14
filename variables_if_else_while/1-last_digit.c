@@ -3,7 +3,8 @@
 #include <time.h>
 /**
  * main - Entry point
- *
+ * @n: Numero random
+ * @last_digit: Ultimo dijito de n 
  * Return: Always 0 (Success)
  */
 /* more headers goes there */
