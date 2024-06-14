@@ -9,7 +9,9 @@ int main(void)
 	char inicio = 'a';
 
 	for (inicio = 'a'; inicio <= 'z'; inicio++)
+{
 		putchar(inicio);
-
+		putchar('\n');
+}
 	return (0);
 }
