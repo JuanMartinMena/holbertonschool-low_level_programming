@@ -7,14 +7,18 @@ int main(void)
 {
 	char inicio = 'a';
 
-	while (inicio < 'z')
-		if (inicio != 'e' && inicio != 'q')
+	for (inicio = 'a'; inicio <= 'z'; inicio++)
+{
+	if (inicio == 'e' || inicio == 'q')
+{
+
+}
+	else
 {
 		putchar(inicio);
 }
-{
-		inicio++;
-}
+
 		putchar('\n');
+}
 	return (0);
 }
