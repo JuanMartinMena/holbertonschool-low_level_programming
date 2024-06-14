@@ -11,14 +11,13 @@ int main(void)
 {
 	if (inicio == 'e' || inicio == 'q')
 {
-
+	inicio++;
 }
 	else
 {
 		putchar(inicio);
 }
-
-		putchar('\n');
 }
+		putchar('\n');
 	return (0);
 }
