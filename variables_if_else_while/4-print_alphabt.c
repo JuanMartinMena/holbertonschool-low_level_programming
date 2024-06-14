@@ -15,5 +15,6 @@ int main(void)
 {
 		inicio++;
 }
+		putchar('\n');
 	return (0);
 }
