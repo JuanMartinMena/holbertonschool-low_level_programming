@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _isalpha
- * @c: caracter 
- * Return: void 
+ * _isalpha - print
+ * @c: caracter
+ * Return: void
  */
 int _isalpha(int c)
 {
@@ -14,8 +14,8 @@ int _isalpha(int c)
 {
 	return (1);
 }
-        else
+	else
 {
-        return (0);
+	return (0);
 }
 }
