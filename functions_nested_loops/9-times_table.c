@@ -27,6 +27,8 @@ void times_table(void)
 				_putchar('0' + a);
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 			}
 		}
 			_putchar ('\n');
