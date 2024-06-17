@@ -36,12 +36,13 @@ void times_table(void)
 			{
 				_putchar('0' + a / 10);
 				_putchar('0' + a % 10);
+				_putchar('\n');
 			}
 			else
 			{
 				_putchar('0' + a);
+				_putchar('\n');
 			}
-			_putchar('\n');
 		}
 	}
 }
