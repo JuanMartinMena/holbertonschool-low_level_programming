@@ -6,11 +6,18 @@
  */
 void jack_bauer(void)
 {
-	int T;
+	int M;
+	int H;
 
-	for (T = "0000"; T <= "2359"; T++)
+	for (H = 0; H <= 23; H++)
 {
-	_putchar(T);
-	_putchar('\n');
+	for (M = 0; M <= 59 ; M++)
+{
+	_putchar('0' + H / 10);
+	_putchar('0' + H % 10);
+	_putchar(':');
+	_putchar('0' + M / 10);
+	_putchar('0' + M % 10);
+}
 }
 }
