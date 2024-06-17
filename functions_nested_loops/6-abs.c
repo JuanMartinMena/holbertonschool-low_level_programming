@@ -1,22 +1,26 @@
 #include "main.h"
 /**
  * _abs - function
- * 
+ *
+ * @n: Numero
+ *
  * Return: void
  */
-int _abs(int)
+int _abs(int n)
 {
-	if (_abs < 0)
+	if (n < 0)
 {
-	_putchar(-_abs);
+	_putchar(-n);
 }
-	else if (_abs == 0)
+	else if (n == 0)
 {
 	_putchar('0');
 }
 	else
 {
-	_putchar(_abs);
+	_putchar(n);
 }
 	_putchar('\n');
+
+	return (n);
 }
