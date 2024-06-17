@@ -12,8 +12,12 @@ int print_last_digit(int n)
 	while (last < 0)
 {
 	last = last * -1;
-}
 	_putchar(last + '0');
-
+}
+	while (last >= 0)
+{
+	_putchar(last);
+}
 	return (0);
+
 }
