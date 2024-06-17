@@ -12,10 +12,6 @@ int _abs(int n)
 {
 	_putchar(-n);
 }
-	else if (n == 0)
-{
-	_putchar('0');
-}
 	else
 {
 	_putchar(n);
