@@ -17,10 +17,16 @@ void times_table(void)
 			a = b * c;
 			if (a >= 10)
 			{
-			_putchar('0' + a / 10);
-			_putchar('0' + a % 10);
-			_putchar(',');
-			_putchar(' ');
+				_putchar('0' + a / 10);
+				_putchar('0' + a % 10);
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('0' + a);
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 			_putchar ('\n');
