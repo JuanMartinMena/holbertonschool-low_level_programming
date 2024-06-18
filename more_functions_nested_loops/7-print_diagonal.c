@@ -8,13 +8,9 @@
 void print_diagonal(int n)
 {
 	int a;
-	int b;
 	int c;
-	int d;
 
 	a = 92;
-	b = ' ';
-	d = n * b;
 
 		if (n <= 0)
 		{
@@ -24,9 +20,9 @@ void print_diagonal(int n)
 		{
 			for (c = 0; c <= n; c++)
 			{
-			_putchar(d);
+			_putchar(' ');
 			_putchar(a);
-			_putchar('\n');
 			}
+			_putchar('\n');
 		}
 }
