@@ -2,7 +2,7 @@
 /**
  * mul - print
  *
- * 
+ *
  * @c: resultado
  *
  * Return: void
