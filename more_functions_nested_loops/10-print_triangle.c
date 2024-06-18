@@ -10,7 +10,9 @@ void print_triangle(int size)
 {
 	int base;
 	int altura;
+	int doble;
 
+	doble = size;
 	if (size <= 0)
 	{
 		_putchar('\n');
@@ -19,7 +21,7 @@ void print_triangle(int size)
 	{
 		for (altura = 0; altura <= size; altura++)
 		{
-			for (base = altura; base <= size; base--)
+			for (base = doble ; base <= size; base--)
 			{
 				_putchar(' ');
 			}
