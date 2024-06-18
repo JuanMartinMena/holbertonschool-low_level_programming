@@ -3,7 +3,8 @@
  * mul - print
  *
  *
- * @c: resultado
+ * @a: valor1
+ * @b: valor2
  *
  * Return: void
  */
