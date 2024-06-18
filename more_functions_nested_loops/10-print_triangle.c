@@ -23,7 +23,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (base = 1; base <= size + altura; base++)
+			for (base = 1; base <= size - altura; base++)
 			{
 				_putchar('#');
 			}
