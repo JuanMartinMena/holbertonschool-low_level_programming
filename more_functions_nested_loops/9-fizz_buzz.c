@@ -21,7 +21,7 @@ int main(void)
 		}
 		else if (numero % 5 == 0)
 		{
-			if (numero < 100)
+			if (numero != 100)
 			{
 				printf("Buzz ");
 			}
