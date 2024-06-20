@@ -26,7 +26,6 @@ void puts_half(char *str)
 	while (str[mita] != '\0')
 	{
 		_putchar(str[mita]);
-		mita++;
 	}
 		_putchar('\n');
 }
