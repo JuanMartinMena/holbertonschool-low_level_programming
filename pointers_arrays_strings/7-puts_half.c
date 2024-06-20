@@ -16,14 +16,13 @@ void puts_half(char *str)
 	{
 		largo++;
 	}
+	n = (largo - 1) / 2;
 	for (mita = largo / 2; mita != '\0'; mita++)
 	{
-		_putchar(str[mita]);
-	}
-	n = (largo - 1) / 2;
-	if (mita % 2 == 0)
-	{
-		_putchar(n);
+		if (mita % 2 == 0)
+		{
+			_putchar(n);
+		}
 	}
 	_putchar('\n');
 }
