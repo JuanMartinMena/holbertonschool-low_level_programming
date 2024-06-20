@@ -18,14 +18,15 @@ void puts_half(char *str)
 	if (largo % 2 == 0)
 	{
 		mita = largo / 2;
-		_putchar(str[mita]);
-		mita++;
 	}
 	else
 	{
 		mita = (largo - 1) / 2;
+	}
+	while (str[mita] != '\0')
+	{
 		_putchar(str[mita]);
 		mita++;
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
