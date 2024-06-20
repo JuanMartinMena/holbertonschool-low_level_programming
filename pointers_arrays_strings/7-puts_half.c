@@ -28,5 +28,4 @@ void puts_half(char *str)
 		_putchar(str[mita]);
 		mita++;
 	}
-		_putchar('\n');
 }
