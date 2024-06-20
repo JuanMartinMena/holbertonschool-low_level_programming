@@ -12,12 +12,11 @@ void puts2(char *str)
 
 	while (str[largo] != '\0')
 	{
-		largo++;
-	}
-	while (str[largo] % 2 == 0)
-	{
-		_putchar(largo);
-	}
+		if (largo % 2 == 0)
+		{
+			_putchar(str[largo]);
+			largo++;
+		}
 	_putchar('\n');
+	}
 }
-
