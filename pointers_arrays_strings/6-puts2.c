@@ -15,8 +15,8 @@ void puts2(char *str)
 		if (largo % 2 == 0)
 		{
 			_putchar(str[largo]);
-			largo++;
 		}
-	_putchar('\n');
+			largo++;
 	}
+	_putchar('\n');
 }
