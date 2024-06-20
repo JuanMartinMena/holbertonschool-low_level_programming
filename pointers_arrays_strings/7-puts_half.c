@@ -10,19 +10,19 @@ void puts_half(char *str)
 {
 	int largo = 0;
 	int mita = 0;
-	int n;
 
 	while (str[largo] != '\0')
 	{
 		largo++;
 	}
-	n = (largo - 1) / 2;
-	for (mita = largo / 2; mita != '\0'; mita++)
+	mita = largo / 2;
+	while (mita != '\0')
 	{
 		if (mita % 2 == 0)
 		{
-			_putchar(n);
+		_putchar(str[mita]);
+		mita++;
 		}
-	}
 	_putchar('\n');
+	}
 }
