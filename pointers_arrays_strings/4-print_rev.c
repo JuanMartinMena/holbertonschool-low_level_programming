@@ -8,7 +8,7 @@
  */
 void print_rev(char *s)
 {
-	int largo;
+	int largo = 0;
 	int atras;
 
 	while (s[largo] != '\0')
