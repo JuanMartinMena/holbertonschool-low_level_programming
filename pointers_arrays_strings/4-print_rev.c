@@ -8,16 +8,16 @@
  */
 void print_rev(char *s)
 {
-	char ultimo;
+	int largo;
+	int atras;
 
-	while (*s != '\0')
+	while (s[largo] != '\0')
 	{
-		s++;
+		largo++;
 	}
-	s = & ultimo;
-	for (*s = 0; *s <= ultimo; s++)
+	for (atras = largo - 1; atras >= 0; atras--)
 	{
-		_putchar(*s);
-		ultimo--;
+		_putchar(s[atras]);
 	}
+	_putchar('\n');
 }
