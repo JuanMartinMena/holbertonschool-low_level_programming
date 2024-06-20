@@ -9,14 +9,14 @@
 void puts_half(char *str)
 {
 	int largo = 0;
-	int mita;
+	int mita = 0;
 	int n;
 
 	while (str[largo] != '\0')
 	{
 		largo++;
 	}
-	for (mita = largo / 2; mita < '\0'; mita++)
+	for (mita = largo / 2; mita != '\0'; mita++)
 	{
 		_putchar(str[mita]);
 	}
