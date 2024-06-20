@@ -21,7 +21,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		mita = (largo - 1) / 2;
+		mita = (largo + 1) / 2;
 	}
 	while (str[mita] != '\0')
 	{
