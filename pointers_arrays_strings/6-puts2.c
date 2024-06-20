@@ -8,7 +8,7 @@
  */
 void puts2(char *str)
 {
-	int largo;
+	int largo = 0;
 
 	while (str[largo] != '\0')
 	{
@@ -18,5 +18,6 @@ void puts2(char *str)
 	{
 		_putchar(largo);
 	}
+	_putchar('\n');
 }
 
