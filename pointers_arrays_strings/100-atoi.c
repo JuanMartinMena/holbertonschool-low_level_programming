@@ -13,15 +13,28 @@ int _atoi(char *s)
 	char menos = '-';
 	char mas = '+';
 	int numero = (x >= 48 && x <= 57)//todos los valores de los numeros en la tabla ascci
-	while (s[largo] != '\0')//esto es para ver el largo del string
-	{
-		largo++;
-	}
+	
 	if (menos % 2 != 0)
 	{
 		_putchar(menos);
+		while (s[largo] != '\0' && largo == numero)
+		{
+			_putchar(s[largo]);
+			s++;
+		}
 	}
-		
+	else
+	{
+		while (s[largo] != '\0' && largo == numero)
+		{
+			_putchar(s[largo]);
+			s++;
+		}
+	}
+
+
+
+
 
 
 
