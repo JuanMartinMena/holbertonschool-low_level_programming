@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int largo = 0;
 	char menos = '-';
 	char mas = '+';
-	int numero = //todos los valores de los numeros en la tabla ascci
+	int numero = (x >= 48 && x <= 57)//todos los valores de los numeros en la tabla ascci
 	while (s[largo] != '\0') //esto es para ver el largo del string
 	{
 		largo++;
