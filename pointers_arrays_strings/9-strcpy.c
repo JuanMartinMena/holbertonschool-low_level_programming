@@ -11,8 +11,6 @@ char *_strcpy(char *dest, char *src)
 {
 	int largo = 0;
 	int largo2 = 0;
-	int mayor;
-	int menor;
 
 	while (src[largo] != '\0')
 	{
@@ -22,8 +20,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		largo2++;
 	}
-	mayor = largo - largo2;
-	menor = largo2 - largo;
 	if (largo == largo2)
 	{
 		while (largo != '\0')
@@ -32,11 +28,11 @@ char *_strcpy(char *dest, char *src)
 		src++;
 		}
 	}
-	else if (largo >= largo2)
+	else if (largo > largo2)
 	{
 		while (largo2 != '\0')
 		{
-		dest[largo2] = src[largo] - mayor;
+		dest[largo2] = src[largo];
 		dest++;
 		}
 	}
@@ -44,7 +40,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		while (largo != '\0')
 		{
-		dest[largo2] = src[largo] - menor;
+		dest[largo2] = src[largo];
 		src++;
 		}
 	}
