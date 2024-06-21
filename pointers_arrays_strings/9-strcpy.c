@@ -31,10 +31,12 @@ char *_strcpy(char *dest, char *src)
 	else if (largo >= largo2)
 	{
 		dest[largo2] = src[largo] - mayor;
+		src++;
 	}
 	else
 	{
 		dest[largo2] = src[largo] - menor;
+		src++;
 	}
 	return (dest);
 }
