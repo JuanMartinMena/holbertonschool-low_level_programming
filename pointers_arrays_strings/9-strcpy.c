@@ -26,17 +26,27 @@ char *_strcpy(char *dest, char *src)
 	menor = largo2 - largo;
 	if (largo == largo2)
 	{
+		while (largo != '\0')
+		{
 		dest[largo2] = src[largo];
+		src++;
+		}
 	}
 	else if (largo >= largo2)
 	{
+		while (largo2 != '\0')
+		{
 		dest[largo2] = src[largo] - mayor;
-		src++;
+		dest++;
+		}
 	}
 	else
 	{
+		while (largo != '\0')
+		{
 		dest[largo2] = src[largo] - menor;
 		src++;
+		}
 	}
 	return (dest);
 }
