@@ -34,3 +34,4 @@ int _atoi(char *s)
 	return (0);
 	}
 }
+// tengo que hacer un loop para que te vaya imprimiendo de 1 en 1 los numeros, entonces afuera de eso tenes que hacer lo del mas u menos
