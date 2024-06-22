@@ -35,7 +35,7 @@ int _atoi(char *s)
 	}
 		if (resultado < -2147483647)
 		{
-			return (-2147483647 - 1);
+			return (-2147483647);
 		}
 		else if (resultado > 2147483647)
 		{
@@ -43,6 +43,3 @@ int _atoi(char *s)
 		}
 	return (resultado * signo);
 }
-
-
-
