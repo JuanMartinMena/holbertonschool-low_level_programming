@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int largo = 0;
-	char *inicio, *final, variable;
+	char *inicio, *final, dato;
 
 	while (s[largo] != '\0')
 	{
@@ -20,9 +20,9 @@ void rev_string(char *s)
 
 	while (final > inicio)
 	{
-		variable = *inicio;
+		dato = *inicio;
 		*inicio = *final;
-		*final = variable;
+		*final = dato;
 
 		inicio++;
 		final--;
