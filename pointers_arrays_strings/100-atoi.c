@@ -33,5 +33,13 @@ int _atoi(char *s)
 		}
 		s++;
 	}
+		if (resultado < -2147483647)
+		{
+			return (-2147483647);
+		}
+		else if (resultado > 2147483647)
+		{
+			return (2147483647);
+		}
 	return (resultado * signo);
 }
