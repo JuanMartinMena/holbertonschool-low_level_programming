@@ -14,23 +14,19 @@ int _atoi(char *s)
 	int numero = 0;
 	int largo = 0;
 
-	while (s[largo] != '\0')
+	while (*s)
 	{
-		largo++;
-	}
-	while (s[largo])
-	{
-		if (s[largo] == '-')
+		if (*s == '-')
 		{
 			signo *= -1;
 		}
 		else if (s[largo] == '+')
 		{
 		}
-		else if (s[largo] >= '0' && s[largo] <= '9')
+		else if (*s >= '0' && *s <= '9')
 		{
 			numero = 1;
-			resultado = (resultado * 10 + s[largo] - '0');
+			resultado = (resultado * 10) + (*s - '0');
 		}
 		else if (numero)
 		{
