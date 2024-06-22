@@ -24,6 +24,13 @@ int _atoi(char *s)
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
+			if (resultado > (2147483647 - (*s - '0')) / 10)
+			{
+				if (signo == 1)
+					return (2147483647);
+				else
+					return (-2147483648);
+			}
 			numero = 1;
 			resultado = (resultado * 10) + (*s - '0');
 		}
@@ -33,13 +40,5 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-		if (signo == - 1 && resultado > 2147483647)
-		{
-			return (-2147483648);
-		}
-		else if (signo == - 1 && resultado > 2147483647)
-		{
-			return (2147483647);
-		}
 	return (resultado * signo);
 }
