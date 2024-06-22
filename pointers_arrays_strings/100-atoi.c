@@ -43,3 +43,6 @@ int _atoi(char *s)
 		}
 	return (resultado * signo);
 }
+
+
+
