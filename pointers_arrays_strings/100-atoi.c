@@ -9,57 +9,34 @@
  */
 int _atoi(char *s)
 {
+	int signo = 1;
+	int resultado = 0;
+	int numero = 0;
 	int largo = 0;
-	char menos = '-';
-	char mas = '+';
-	int numero = (x >= 48 && x <= 57)//todos los valores de los numeros en la tabla ascci
-	
-	if (menos % 2 != 0)
+
+	while (s[largo] != '\0')
 	{
-		_putchar(menos);
-		while (s[largo] != '\0' && largo == numero)
-		{
-			_putchar(s[largo]);
-			s++;
-		}
+		largo++;
 	}
-	else
+	while (s[largo])
 	{
-		while (s[largo] != '\0' && largo == numero)
+		if (s[largo] == '-')
 		{
-			_putchar(s[largo]);
-			s++;
+			signo *= -1;
 		}
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	if (largo == numero, menos, mas) //si los valores del string son numeros/+/- que haga lo de adentro 
-	{
-		if () //si uno es mayor al otro que me lo cambie
+		else if (s[largo] == '+')
 		{
-		//printear signo de menos
 		}
-		else
+		else if (s[largo] >= '0' && s[largo] <= '9')
 		{
-		//printear printear singo de mas
+			numero = 1;
+			resultado = (resultado * 10 + s[largo] - '0');
 		}
-		//printear numero
+		else if (numero)
+		{
+			break;
+		}
+		s++;
 	}
-	else //si no es numero/+/- retorne 0
-	{
-	return (0);
-	}
+	return (resultado * signo);
 }
-// tengo que hacer un loop para que te vaya imprimiendo de 1 en
