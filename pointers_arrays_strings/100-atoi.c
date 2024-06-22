@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int signo = 1;
 	int resultado = 0;
 	int numero = 0;
-	int largo = 0;
 
 	while (*s)
 	{
@@ -20,7 +19,7 @@ int _atoi(char *s)
 		{
 			signo *= -1;
 		}
-		else if (s[largo] == '+')
+		else if (*s == '+')
 		{
 		}
 		else if (*s >= '0' && *s <= '9')
