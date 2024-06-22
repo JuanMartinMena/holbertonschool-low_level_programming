@@ -33,11 +33,11 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-		if (resultado < -2147483647)
+		if (signo == - 1 && resultado > 2147483647)
 		{
-			return (-2147483647 - 1);
+			return (-2147483648);
 		}
-		else if (resultado > 2147483647)
+		else if (signo == - 1 && resultado > 2147483647)
 		{
 			return (2147483647);
 		}
