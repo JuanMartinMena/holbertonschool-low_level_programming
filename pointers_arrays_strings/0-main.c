@@ -1,1 +1,1 @@
-void reset_to_98(int *n);
+char *_strcat(char *dest, char *src);
