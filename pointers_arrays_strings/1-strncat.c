@@ -4,7 +4,7 @@
  *
  * @dest: variable1
  * @src: variable2
- *
+ * @n: variable src stop
  *  Return: void
  */
 char *_strncat(char *dest, char *src, int n)
