@@ -16,10 +16,9 @@ char *cap_string(char *str)
 		if (*ptr == ' ' || *ptr == '\n' || *ptr == ',' || *ptr == ';'
 				|| *ptr == '.' || *ptr == '!' || *ptr == '?'
 				|| *ptr == '"' || *ptr == '(' || *ptr == ')'
-				|| *ptr == '{' || *ptr == '}' || *ptr == '	')
+				|| *ptr == '{' || *ptr == '}' || *ptr == '\t')
 		{
 			empiezo = 1;
-			_putchar(' ');
 		}
 		else if (empiezo && *ptr >= 'a' && *ptr <= 'z')
 		{
