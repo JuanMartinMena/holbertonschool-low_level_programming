@@ -29,6 +29,7 @@ char *cap_string(char *str)
 		else
 		{
 			_putchar(*ptr);
+			empiezo = 1;
 		}
 		ptr++;
 	}
