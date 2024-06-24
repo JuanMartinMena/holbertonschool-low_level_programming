@@ -16,7 +16,7 @@ char *cap_string(char *str)
 		if (*ptr == ' ' || *ptr == '\n' || *ptr == ',' || *ptr == ';'
 				|| *ptr == '.' || *ptr == '!' || *ptr == '?'
 				|| *ptr == '"' || *ptr == '(' || *ptr == ')'
-				|| *ptr == '{' || *ptr == '}')
+				|| *ptr == '{' || *ptr == '}' || *ptr == '	')
 		{
 			empiezo = 1;
 			_putchar(' ');
