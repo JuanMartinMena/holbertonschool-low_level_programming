@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int empiezo = 0;
+	int empiezo = 1;
 
 	while (*ptr != '\0')
 	{
@@ -18,17 +18,18 @@ char *cap_string(char *str)
 				|| *ptr == '"' || *ptr == '(' || *ptr == ')'
 				|| *ptr == '{' || *ptr == '}')
 		{
-			_putchar(' ');
 			empiezo = 1;
+			_putchar(' ');
 		}
-		else if (empiezo == 1 && *ptr >= 'a' && *ptr <= 'z')
+		else if (empiezo && *ptr >= 'a' && *ptr <= 'z')
 		{
 			*ptr = *ptr - ('a' - 'A');
+			empiezo = 0;
 		}
 		else
 		{
+			_putchar(*ptr);
 		}
-		empiezo = 0;
 		ptr++;
 	}
 	return (str);
