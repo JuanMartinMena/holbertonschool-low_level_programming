@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 	char *ptr = str;
-	int empiezo = 1;
+	int empiezo = 0;
 
 	while (*ptr != '\0')
 	{
