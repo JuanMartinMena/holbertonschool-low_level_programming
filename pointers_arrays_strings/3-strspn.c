@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strspn - print
+ * _strspn - print
  *
  * @s: string1
  * @accept: string2
