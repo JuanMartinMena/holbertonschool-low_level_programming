@@ -8,9 +8,11 @@
  */
 int factorial(int n)
 {
+	int i;
+
 	if (n > 0)
 	{
-		n = n * (n-1);
+		i = n * (n-1);
 		factorial(n + 1);
 	}
 	else if (n == 0)
@@ -21,5 +23,5 @@ int factorial(int n)
 	{
 		return (-1);
 	}
-	return (n);
+	return (i);
 }
