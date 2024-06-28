@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		suma =+ number;
+		suma += number;
 	}
 	printf("%d\n", suma);
 	return (0);
