@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 	(void)argc;
 	if ( argc != 2)
 	{
+		printf("Error");
 	}
 	printf("%d\n", result);
 	return (0);
