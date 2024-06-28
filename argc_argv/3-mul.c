@@ -3,8 +3,8 @@
 /**
  * main - start
  *
- * @argc - numero_de_datos
- * @argv - string de datos
+ * @argc: - numero_de_datos
+ * @argv: - strin de datos
  *
  * Return: 0 (Succss)
  */
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error ");
 		return (0);
 	}
 
