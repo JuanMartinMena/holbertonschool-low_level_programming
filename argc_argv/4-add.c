@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, number;
+	int i, number, suma;
 
 	if (argc == 1)
 	{
@@ -27,8 +27,9 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-	printf("%d\n", number);
+		suma =+ number;
 	}
+	printf("%d\n", suma);
 	return (0);
 }
 
