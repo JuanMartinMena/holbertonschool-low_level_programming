@@ -1,11 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * 
+ * main - start
  *
+ * @argv: string
  *
- *
+ * Return: 0 (Success)
  */
-int main (char *argv[])
+int main(int argc, char *argv[])
 {
-	_putchar(argv[0]);
+	(void)argc;
+	printf("%s\n", argv[0]);
+	return (0);
 }
