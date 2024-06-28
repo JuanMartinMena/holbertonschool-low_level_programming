@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, number, suma = 0;
+	int i, j, number, suma = 0;
 
 	if (argc == 1)
 	{
@@ -20,14 +20,16 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		number = atoi(argv[i]);
-
-		if (number <= 0 && argv[i][0] != '0')
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
+		number = atoi(argv[i]);
 		suma += number;
+	}
 	}
 	printf("%d\n", suma);
 	return (0);
