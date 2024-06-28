@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int result = (num1 * num2);
 
 	(void)argc;
-	if ( argc != 2)
+	if (result != num1 * num2)
 	{
 		printf("Error");
 	}
