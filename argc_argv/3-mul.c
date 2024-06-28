@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 	int num2 = atoi(argv[2]);
 	int result = (num1 * num2);
 
-	(void)argc;
 	if (argc != 3)
 	{
 		printf("Error");
