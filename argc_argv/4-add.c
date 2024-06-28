@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		number = atoi(argv[i]);
 
-		if (number <= 0)
+		if (number <= 0 && argv[i][0] != '0')
 		{
 			printf("Error\n");
 			return (1);
@@ -32,4 +32,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", suma);
 	return (0);
 }
-
