@@ -4,6 +4,7 @@
  * main - start
  *
  * @argv: string
+ * @argc: cantidad de datos del array
  *
  * Return: 0 (Success)
  */
