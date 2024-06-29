@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
-		{
-			printf("Error\n");
-			return (1);
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		number = atoi(argv[i]);
 		suma += number;
-	}
 	}
 	printf("%d\n", suma);
 	return (0);
