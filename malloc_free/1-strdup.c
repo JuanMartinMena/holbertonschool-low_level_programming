@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *duplicado;
-	int largo1 = 0, largo2 = 0; 
+	int largo1 = 0, largo2 = 0;
 
 	if (str == NULL)
 	{
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		largo1++;
 	}
 	duplicado = malloc((largo1 + 1) * sizeof(char));
-	
+
 	for (largo2 = 0; largo2 < largo1; largo2++)
 	{
 		duplicado[largo2] = str[largo2];
