@@ -9,16 +9,23 @@
 char *_strdup(char *str)
 {
 	char *duplicado;
-	int i = 0;
+	int largo1 = 0, largo2 = 0; 
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (str[i] != '\0')
+	while (str[largo1] != '\0')
 	{
-		i++;
+		largo1++;
 	}
-	duplicado = malloc(str[i] * sizeof(char));
+	duplicado = malloc((largo1 + 1) * sizeof(char));
+	
+	for (largo2 = 0; largo2 < largo1; largo2++)
+	{
+		duplicado[largo2] = str[largo2];
+	}
+	duplicado[largo1] = '\0';
+
 	return (duplicado);
 }
