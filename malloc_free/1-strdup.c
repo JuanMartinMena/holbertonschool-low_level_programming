@@ -5,6 +5,7 @@
  *
  * @str: string a duplicar
  *
+ * Return: void
  */
 char *_strdup(char *str)
 {
