@@ -16,11 +16,18 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
+
 	while (str[largo1] != '\0')
 	{
 		largo1++;
 	}
 	duplicado = malloc((largo1 + 1) * sizeof(char));
+
+	if (duplicado == NULL)
+	{
+		return (NULL);
+	}
 
 	for (largo2 = 0; largo2 < largo1; largo2++)
 	{
