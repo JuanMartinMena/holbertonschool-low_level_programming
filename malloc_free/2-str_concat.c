@@ -21,10 +21,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		j++;
 	}
-	if (s1[i] == '\0' || s2[j] == '\0')
-	{
-		return (NULL);
-	}
 
 	final = malloc((i + j + 1) * sizeof(char));
 
