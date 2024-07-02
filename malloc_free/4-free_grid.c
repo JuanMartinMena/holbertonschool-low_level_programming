@@ -12,9 +12,9 @@ void free_grid(int **grid, int height)
 {
 	int i = 0;
 
-	for (i = 0; i < height; i++)
+	for (i = 0; i < height; i++) // Libera la memoria de cada fila de el array doble
 	{
 		free(grid[i]);
 	}
-	free(grid);
+	free(grid); // Termina de limpiar el array
 }
