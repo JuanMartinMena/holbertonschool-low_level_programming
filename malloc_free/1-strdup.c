@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	char *duplicado;
 	int largo1 = 0, largo2 = 0;
 
-	if (str == NULL)
+	if (str == NULL) // si el string solo tiene el '\0'
 	{
 		return (NULL);
 	}
