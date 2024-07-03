@@ -10,12 +10,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int * memoria;
+	unsigned int *memoria;
 
 	memoria = malloc(b * sizeof(unsigned int));
 
-	if (memoria = NULL)
+	if (memoria == NULL)
 	{
-		exit(memoria);
+		exit(1);
 	}
+	return (memoria);
 }
