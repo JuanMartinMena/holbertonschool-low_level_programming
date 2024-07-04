@@ -9,13 +9,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *memoria;
+	unsigned int *memoria; // Puntero de tipo unsigned int.
 
-	memoria = malloc(b);
+	memoria = malloc(b); // Reservamos la memoria para el puntero "memoria".
 
-	if (memoria == NULL)
+	if (memoria == NULL) // Si la reserva de memoria falla.
 	{
-		exit(98);
+		exit(98); // Exit corta el programa abruptamente y da codigo de estado 98 (porque lo pedia).
 	}
-	return (memoria);
+	return (memoria); // Retornamos el puntero.
 }
