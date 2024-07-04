@@ -11,8 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i = 0, total = 0;
-	void *puntero;
-	char *limpieza;
+	char *limpieza, *puntero;
 
 	if (nmemb <= 0 || size <= 0)
 	{
@@ -28,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	limpieza = (char *) puntero;
+	limpieza = puntero;
 
 	for (i = 0; i < total; i++)
 	{
