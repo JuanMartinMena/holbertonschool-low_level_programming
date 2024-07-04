@@ -38,7 +38,7 @@ int **alloc_grid(int width, int height)
 
 			return (NULL); // Termina de limpiar lo que quedo
 		}
-		for (j = 0; j < width; j++) // Esto lo que hace es que calcula el largo de width
+		for (j = 0; j < width; j++) // Esto lo que hace es que va recorriendo el array
 		{                 
 			array[i][j] = 0; // Esto lo que hace es que para todos los valores del array los inicie en 0
 		}
