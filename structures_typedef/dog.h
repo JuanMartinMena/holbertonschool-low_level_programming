@@ -5,8 +5,6 @@
  * @name: puntero para el nombre del perro
  * @age: edad del perro
  * @owmer: puntero para el dueno del perro
- *
- * Return: info del perro
  */
 struct dog
 {
