@@ -17,17 +17,17 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
+	tamano = max - min + 1;
+
 	array = malloc(tamano * sizeof(int));
 
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-
 	for (i = 0; i < tamano; i++)
 	{
 		array[i] = min + 1;
 	}
-
 	return (array);
 }
