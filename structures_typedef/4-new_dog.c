@@ -44,21 +44,26 @@ char *_strdup(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
+	char *new_name;
+	char *new_owner;
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
 		return (NULL);
 	}
-	d->name = _strdup(name);
+	new_name = _strdup(name);
 	if (d->name == NULL)
 	{
 		return (NULL);
 	}
-	d->owner = _strdup(owner);
+	new_owner = _strdup(owner);
+	if (new_owner == NULL)
 	{
 		return (NULL);
 	}
+	d->name = new_name;
+	d->owner = new_owner;
 	d->age = age;
 	return (d);
 }
