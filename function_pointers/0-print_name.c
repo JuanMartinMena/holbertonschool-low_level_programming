@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 /**
  * print_name - escribe un nombre
  *
@@ -13,20 +14,4 @@ void print_name(char *name, void (*f)(char *))
 	{
 		f(name);
 	}
-}
-/**
- * print - imprime una cadena de caracteres
- *
- * @str: cadena de caracteres a imprimir
- *
- * Return: void
- */
-void print(char *str)
-{
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
 }
