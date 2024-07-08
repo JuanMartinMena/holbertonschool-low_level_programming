@@ -14,11 +14,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
-	if (array != NULL && action != NULL)
+	if (array != NULL && action != NULL) // verifica si "array" y "action" no son NULL
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < size; i++) 
 		{
-			action(array[i]);
+			action(array[i]); // Llama a la funcion "action" con cada elemento del arreglo
 		}
 	}
 }
