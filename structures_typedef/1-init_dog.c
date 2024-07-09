@@ -9,10 +9,10 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d != NULL) // Mientras que el puntero exista.
 	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
+		d->name = name; // Asigna el puntero "name" al "name" de la estructura "struct dog"
+		d->age = age; // Asigna el valor "age" al "age" de la estructura "struct dog"
+		d->owner = owner; // Asigna el puntero "owner" al "owner" de la estructura "struct dog"
 	}
 }
