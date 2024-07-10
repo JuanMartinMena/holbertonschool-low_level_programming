@@ -6,6 +6,8 @@
  * @array: array
  * @size: numero de elementos del array
  * @cmp: puntero ala funcion
+ *
+ * Return: void
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
