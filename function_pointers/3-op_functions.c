@@ -83,5 +83,6 @@ int op_mod(int a, int b)
 		exit(100);
 	}
 	modulo = a % b;
-	return(modulo);
+
+	return (modulo);
 }
