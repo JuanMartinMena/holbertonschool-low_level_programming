@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - funcion para retornar el resultado
+ *
+ * @argc: terminar
+ * @argv: terminar
+ *
+ * Return: resultado
+ */
+
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
