@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
+/**
+ * print_numbers - Imprime números, seguidos de una nueva líne
+ *
+ * @separator: La cadena a imprimir entre los números
+ * @n: El número de enteros pasados a la funcin.
+ *
+ * Return: void
+ */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
