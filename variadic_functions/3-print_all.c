@@ -37,10 +37,10 @@ void print_all(const char * const format, ...)
 				if (string == NULL)
 					string = "(nil)";
 				printf("%s%s", separador, string);
-				separador = ", ";
 				break;
 			}
 		}
+		separador = ", ";
 		i++;
 	}
 	va_end(args);
