@@ -15,13 +15,15 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char *string;
 	char current;
+	int printed = 0, count = 0;
 
 	va_start(args, format);
-	while (format && format[i])
+	while ((current = format[i++]))
 	{
-		current = format[i];
-		if (i > 0)
-			printf(", ");
+		if (current == 'c' || current == 'i' || current == 'f' || current == 's')
+		{
+			if (i > 0)
+				printf(", ");
 		switch (current)
 		{
 			case 'c':
@@ -40,12 +42,12 @@ void print_all(const char * const format, ...)
 					string = "(nil)";
 				printf("%s", string);
 				break;
-				default:
-				break;
 			}
+			printed++;
+			count++;
 		}
-		i++;
-	}
+		}
 	va_end(args);
 	printf("\n");
+	}
 }
