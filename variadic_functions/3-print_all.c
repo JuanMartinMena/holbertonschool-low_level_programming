@@ -20,25 +20,29 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		current = format[i];
-		if (current == 'c' || current == 'i' || current == 'f' || current == 's')
+		switch (current)
 		{
-			printf("%s", separador);
-			if (current == 'c')
-				printf("%c", va_arg(args, int));
-			if (current == 'i')
-				printf("%d", va_arg(args, int));
-			if (current == 'f')
-				printf("%f", va_arg(args, double));
-			if (current == 's')
+			case 'c':
+				printf("%s%c", separador, va_arg(args, int));
+				break;
+			case 'i':
+				printf("%s%d", separador, va_arg(args, int));
+				break;
+			case 'f':
+				printf("%s%f", separador, va_arg(args, double));
+				break;
+			case 's':
 			{
 				string = va_arg(args, char *);
-				string = string ? string : "(nil)";
-				printf("%s", string);
+				if (string == NULL)
+					string = "(nil)";
+				printf("%s%s", separador, string);
+				break;
 			}
 			separador = ", ";
+			i++;
 		}
-		i++;
+		va_end(args);
+		printf("\n");
 	}
-	va_end(args);
-	printf("\n");
 }
