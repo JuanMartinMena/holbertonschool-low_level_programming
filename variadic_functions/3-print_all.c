@@ -39,10 +39,10 @@ void print_all(const char * const format, ...)
 				printf("%s%s", separador, string);
 				break;
 			}
-			separador = ", ";
-			i++;
 		}
-		va_end(args);
-		printf("\n");
+		separador = ", ";
+		i++;
 	}
+	va_end(args);
+	printf("\n");
 }
