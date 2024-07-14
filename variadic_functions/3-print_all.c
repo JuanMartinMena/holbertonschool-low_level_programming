@@ -40,6 +40,8 @@ void print_all(const char * const format, ...)
 					string = "(nil)";
 				printf("%s", string);
 				break;
+				default:
+				break;
 			}
 		}
 		i++;
