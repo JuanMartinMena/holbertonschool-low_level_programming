@@ -2,6 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ * string_length - calcula el largo de un string
+ *
+ * @str: El string al cual se le calculara la longitud
+ *
+ * Return: EL largo del string
+ */
+size_t string_length(const char *str)
+{
+	size_t largo = 0;
+
+	while (str[largo] != '\0')
+	{
+		largo++;
+	}
+	return (largo);
+}
+/**
  * add_node - agrega un nodo al principio
  *
  * @head: untero doble al header de la lista
@@ -26,7 +43,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	new_node->str = duplicado;
-	new_node->len = strlen(str);
+	new_node->len = string_length(str);
 	new_node->next = *head;
 	*head = new_node;
 	return (new_node);
