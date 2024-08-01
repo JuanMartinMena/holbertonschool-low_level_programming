@@ -1,0 +1,1 @@
+La manipulación de bits es una técnica en programación que permite operar directamente sobre los bits individuales de un dato. Un bit es la unidad mínima de información en computación y puede tener solo uno de dos valores: 0 o 1.
