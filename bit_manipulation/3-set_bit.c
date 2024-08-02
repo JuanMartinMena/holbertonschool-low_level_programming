@@ -3,7 +3,7 @@
  * set_bit - Establece el valor del bit a 1 en un índice dado
  *
  * @n: Puntero al número en el que se establecerá el bi
- * @index: El índice del bit, comenzando desde 
+ * @index: El índice del bit, comenzando desd
  *
  * Return: 1 si funcionó, o -1 si ocurrió un err
  */
