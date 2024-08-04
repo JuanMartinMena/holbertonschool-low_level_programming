@@ -6,7 +6,7 @@
  *
  * @filename: El nombre del archivo.
  * @text_content: Una cadena terminada en NULL a agregar al final del archivo.
- * 
+ *
  * Return: 1 en éxito y -1 en fllo.
  */
 int append_text_to_file(const char *filename, char *text_content)
